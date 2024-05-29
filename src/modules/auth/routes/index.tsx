@@ -1,4 +1,4 @@
-import Auth from "../pages/Auth";
+import Auth from "../pages/AuthPage/Auth";
 
 export const routes = [
     {
