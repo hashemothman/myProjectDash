@@ -1,6 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import App from "./App";
-import { routes as AuthRouters } from "./modules/auth/routes";
+// import { routes as AuthRouters } from "./modules/auth/routes";
 import { routes as ReportRouters } from "./modules/reports/routes";
 import { routes as AgentRouters } from "./modules/agents/routes";
 import { routes as UserRouters } from "./modules/users/routes";
@@ -10,11 +10,16 @@ import { routes as OfficeRouters } from "./modules/offices/routes";
 import { routes as EmployeeRouters } from "./modules/employees/routes";
 import { routes as ServicesRouters } from "./modules/services/routes";
 import { routes as SettingsRouters } from "./modules/settings/routes";
+import Auth from "./modules/auth/pages/AuthPage/Auth";
 
 export const routers = createBrowserRouter([
     {
-        path: "/",
+        path: "/home",
         element: <App/>,
-        children:[...AuthRouters,...ReportRouters,...AgentRouters,...UserRouters,...CoinRouters,...InvoiceRouters,...OfficeRouters,...EmployeeRouters,...ServicesRouters,...SettingsRouters],
+        children:[...ReportRouters,...AgentRouters,...UserRouters,...CoinRouters,...InvoiceRouters,...OfficeRouters,...EmployeeRouters,...ServicesRouters,...SettingsRouters],
+    },
+    {
+        path: "/",
+        element: <Auth/>
     },
 ]);

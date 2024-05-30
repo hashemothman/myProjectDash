@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Logo from '../../../../../public/logo.png'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import './Login.css'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -32,7 +33,9 @@ const Login = () => {
           </div>
         </div>
         <span className='hr'></span>
-        <button className="login-button">تسجيل الدخول</button>
+        <Link to={'/home'}>
+        <button className="login-button" >تسجيل الدخول</button></Link>
+        
       </div>
     </>
   );

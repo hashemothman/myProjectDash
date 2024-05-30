@@ -1,6 +1,6 @@
 .sidebar {
     width: 253px;
-    min-height: 974px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -31,7 +31,7 @@
 }
 
 .sidebar .main {
-    height: 874px;
+    height: 90vh;
     background-color: #262D60;
     color: #FFFFFF;
     display: flex;
