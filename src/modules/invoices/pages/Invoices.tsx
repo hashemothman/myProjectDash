@@ -1,7 +1,7 @@
 
 const Invoices = () => {
   return (
-  <>Users</>
+  <>Invoices</>
   )
 }
 

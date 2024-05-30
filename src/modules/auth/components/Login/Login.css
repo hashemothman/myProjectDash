@@ -1,0 +1,63 @@
+.logo {
+    width: 9.25rem;
+    margin-bottom: 3.75rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    width: 100%;
+    max-width: 22.28rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+label {
+    display: block;
+    margin: 0.3125rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+input {
+    background-color: #F4F8FB;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.625rem 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-align: right;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+
+span.hr {
+    border: 1.05px #EFF1F4 solid;
+    margin: 0.65875rem;
+}
+
+
+.login-button {
+    width: 100%;
+    height: 3.5rem;
+    padding: .5rem 1rem;
+    background-color: #262D60;
+    color: #fff;
+    border: none;
+    border-radius: 67px;
+    cursor: pointer;
+}

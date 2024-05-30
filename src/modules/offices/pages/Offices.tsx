@@ -1,7 +1,7 @@
 
 const Offices = () => {
   return (
-  <>Users</>
+  <>Offices</>
   )
 }
 
