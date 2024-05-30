@@ -1,7 +1,7 @@
 
 const Settings = () => {
   return (
-  <>Users</>
+  <>Settings</>
   )
 }
 

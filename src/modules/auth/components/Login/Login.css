@@ -27,7 +27,6 @@ input {
     border: none;
     border-radius: 8px;
     outline: none;
-    box-sizing: border-box;
     text-align: right;
 }
 

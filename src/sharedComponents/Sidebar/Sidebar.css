@@ -1,0 +1,89 @@
+.sidebar {
+    width: 253px;
+    min-height: 974px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 999999;
+}
+
+.sidebar .header {
+    width: 100%;
+    height: 100px;
+    background-color: #F4F8FB;
+}
+
+.sidebar .side-logo {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30%;
+    top: 5.5%;
+    background-color: #fff;
+}
+
+.sidebar .side-logo img {
+    width: 78.83px;
+}
+
+.sidebar .main {
+    height: 874px;
+    background-color: #262D60;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sidebar .main ul:first-child {
+    margin-top: 65px;
+}
+
+.sidebar .main ul li {
+    height: 56px;
+    display: flex;
+}
+
+.sidebar .main ul:last-child li {
+    border-top: #FFFFFF 1px solid;
+}
+
+.sidebar .main ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.sidebar .main ul li a.active {
+    background-color: #FFFFFF;
+    color: #262D60;
+}
+
+.sidebar .main ul li a:hover {
+    background-color: #FFFFFF;
+    color: #262D60;
+}
+
+.sidebar .main ul li a .icon {
+    margin-right: 16px;
+}
+
+.sidebar .main ul li a.active .icon{
+    fill: #262D60;
+}
+.sidebar .main ul li a:hover .icon{
+    fill: #262D60;
+}
+
+.sidebar .main ul li a span {
+    margin-right: 16px;
+}
+
+.sidebar .main ul li a .icon {
+    fill: #FFFFFF;
+}

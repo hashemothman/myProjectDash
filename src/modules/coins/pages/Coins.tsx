@@ -1,7 +1,7 @@
 
 const Coins = () => {
   return (
-  <>Users</>
+  <>Coins</>
   )
 }
 
