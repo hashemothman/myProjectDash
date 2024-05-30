@@ -2,7 +2,7 @@
   "name": "bas-fast",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://hashemothman.github.io/myProjectDash/",
+  "homepage": "https://hashemothman.github.io/myProjectDash/basfast-dashbord",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
