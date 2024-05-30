@@ -13,7 +13,7 @@ import { routes as SettingsRouters } from "./modules/settings/routes";
 
 export const routers = createBrowserRouter([
     {
-        path: "/",
+        path: "/basfast-dashbord",
         element: <App/>,
         children:[...AuthRouters,...ReportRouters,...AgentRouters,...UserRouters,...CoinRouters,...InvoiceRouters,...OfficeRouters,...EmployeeRouters,...ServicesRouters,...SettingsRouters],
     },
