@@ -1,7 +1,10 @@
-
+import CountInfo from "../components/CountInfo";
+import './Reports.css';
 const Reports = () => {
   return (
-  <>Reports</>
+    <div className="reports">
+  <CountInfo/>
+  </div>
   )
 }
 

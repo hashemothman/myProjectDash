@@ -14,7 +14,7 @@ const Sidebar = () => {
                 <div className="main">
                     <ul >
                         <li>
-                            <NavLink to='/Reports'
+                            <NavLink to='reports'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaChartLine  className='icon' />
@@ -22,7 +22,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/users'
+                            <NavLink to='users'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaUsers className='icon' />
@@ -30,7 +30,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/agents'
+                            <NavLink to='agents'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaUserTie className='icon' />
@@ -38,7 +38,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/coins'
+                            <NavLink to='coins'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaDollarSign  className='icon' />
@@ -46,7 +46,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/invoices'
+                            <NavLink to='invoices'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaFileInvoiceDollar className='icon' />
@@ -54,7 +54,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/offices'
+                            <NavLink to='offices'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaBook className='icon' />
@@ -62,7 +62,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/employees'
+                            <NavLink to='employees'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaUserCog className='icon' />
@@ -70,7 +70,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/services'
+                            <NavLink to='services'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaHeadset className='icon' />
@@ -78,7 +78,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/settings'
+                            <NavLink to='settings'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >
                                 <FaCog className='icon' />
