@@ -7,9 +7,12 @@ function App() {
 
   return (
     <>
+     
       <div className="body">
-        <Sidebar />
+      <Sidebar />
+      <div className='home'>
         <Outlet />
+        </div>
       </div>
       <Footer />
     </>
