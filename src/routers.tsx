@@ -19,7 +19,7 @@ export const routers = createBrowserRouter([
         children:[...ReportRouters,...AgentRouters,...UserRouters,...CoinRouters,...InvoiceRouters,...OfficeRouters,...EmployeeRouters,...ServicesRouters,...SettingsRouters],
     },
     {
-        path: "/myProjectDash",
+        path: "/",
         element: <Auth/>
     },
 ]);
