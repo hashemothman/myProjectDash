@@ -1,4 +1,4 @@
-import {createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 // import { routes as AuthRouters } from "./modules/auth/routes";
 import { routes as ReportRouters } from "./modules/reports/routes";
@@ -13,13 +13,23 @@ import { routes as SettingsRouters } from "./modules/settings/routes";
 import Auth from "./modules/auth/pages/AuthPage/Auth";
 
 export const routers = createBrowserRouter([
-    {
-        path: "/home",
-        element: <App/>,
-        children:[...ReportRouters,...AgentRouters,...UserRouters,...CoinRouters,...InvoiceRouters,...OfficeRouters,...EmployeeRouters,...ServicesRouters,...SettingsRouters],
-    },
-    {
-        path: "/",
-        element: <Auth/>
-    },
+  {
+    path: "/home",
+    element: <App />,
+    children: [
+      ...ReportRouters,
+      ...AgentRouters,
+      ...UserRouters,
+      ...CoinRouters,
+      ...InvoiceRouters,
+      ...OfficeRouters,
+      ...EmployeeRouters,
+      ...ServicesRouters,
+      ...SettingsRouters,
+    ],
+  },
+  {
+    path: "/myProjectDash",
+    element: <Auth />,
+  },
 ]);
