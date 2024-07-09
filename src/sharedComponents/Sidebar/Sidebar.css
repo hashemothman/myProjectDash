@@ -58,6 +58,9 @@
     align-items: center;
     color: #FFFFFF;
 }
+.sidebar .main ul li a span{
+    font-size: 1rem;
+}
 
 .sidebar .main ul li a.active {
     background-color: #FFFFFF;

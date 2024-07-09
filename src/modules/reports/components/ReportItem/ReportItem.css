@@ -1,0 +1,36 @@
+.ho-report-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--border-color) ;
+    border-radius: 8px;
+}
+.ho-report-item-text{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.ho-report-item-text h5{
+font-weight: regular;
+}
+.ho-report-item-icons{
+    display: flex;
+    gap: 0.8rem;
+}
+.ho-report-item-icons div{
+    padding: 0.5rem;
+    background-color: var(--border-color);
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.ho-report-item-icons svg{
+font-size: 1.5rem;
+
+}
