@@ -6,7 +6,7 @@
 }
 .ho-card-info-child{
     display: flex;
-    width: 30%;
+    width: 35%;
     justify-content: space-between;
 }
 .ho-card-info-text{
@@ -17,7 +17,7 @@
  font-size: 1rem;
  /* font-weight: regular; */
 }
-.ho-card-info-text h5{
+.ho-card-info-text p{
     color: var(--number-color);
     font-size: 2rem;
     font-weight: bold;

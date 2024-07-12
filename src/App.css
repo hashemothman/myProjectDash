@@ -3,11 +3,13 @@
     --number-color :#34435B;
     --border-color:#E4E5E9;
     --main-color:#262D60;
+  
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
    
 }
 

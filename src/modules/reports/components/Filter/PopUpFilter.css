@@ -1,0 +1,26 @@
+.ho-popup-filter{
+    width:100%;
+}
+.ho-popup-filter select,
+.ho-popup-filter-date input{
+    width: 100%;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
+.ho-popup-filter select option{
+    color: var(--text-color);
+    background-color: #F4F8FB;
+}
+.ho-popup-filter-date{
+    display: flex;
+    justify-content: space-between;
+}
+.ho-popup-filter-date div{
+    width: 45% !important;
+}

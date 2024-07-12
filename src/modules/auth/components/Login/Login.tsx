@@ -33,7 +33,7 @@ const Login = () => {
           </div>
         </div>
         <span className='hr'></span>
-        <Link to={'/home'}>
+        <Link to={'/home/reports'}>
         <button className="login-button" >تسجيل الدخول</button></Link>
         
       </div>

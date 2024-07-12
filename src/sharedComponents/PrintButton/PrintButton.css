@@ -1,0 +1,14 @@
+.ho-button-print{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 2rem;
+    align-items: center;
+    cursor: pointer;
+}
+.ho-button-print h3,
+.ho-button-print svg{
+    font-size: 1rem;
+}
