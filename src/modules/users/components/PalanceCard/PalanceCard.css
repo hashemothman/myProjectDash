@@ -1,0 +1,31 @@
+.ho-palance-user{
+    width:23%;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.ho-header-palance h1{
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.ho-header-palance p{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.ho-footer-palance{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:1rem;
+}
+/* .ho-footer-palance img{
+    width: 60%;
+} */
+.ho-footer-palance p{
+font-size: 0.8rem;
+font-weight: bold;
+}

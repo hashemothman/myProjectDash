@@ -29,7 +29,7 @@ export const routers = createBrowserRouter([
     ],
   },
   {
-    path: "/myProjectDash",
+    path: "/",
     element: <Auth />,
   },
 ]);

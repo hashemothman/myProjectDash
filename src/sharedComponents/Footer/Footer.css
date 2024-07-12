@@ -8,6 +8,7 @@
     font-weight: bold;
     color: var(--number-color);
 }
-.footer h3{
+.footer h1{
     padding: 0 5px;
+    font-size: 1rem;
 }
