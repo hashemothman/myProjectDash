@@ -1,0 +1,30 @@
+.coin-section .card-coin-balance {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.coin-section .coin-items {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.coin-section .coin-items .add-action {
+    height: 48px;
+    display: flex;
+    justify-content: end;
+}
+
+.coin-section .coin-items .add-action button {
+    width: 147px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 67px;
+    padding: .5rem 1rem;
+    font-family: IBM Plex Sans Arabic;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}

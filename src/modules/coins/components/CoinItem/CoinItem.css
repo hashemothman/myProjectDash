@@ -1,0 +1,42 @@
+.coin-item{
+    height: 88px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.coin-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-item .coin-info {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.coin-item .coin-info img {
+    width: 64px;
+    border-radius: 8px;
+}
+
+.coin-item .coin-info .coin-details p {
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--number-color);
+}
+
+.coin-item .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.535rem;
+}
+
+.coin-item .actions img {
+    width: 48px;
+    cursor: pointer;
+}

@@ -1,0 +1,130 @@
+.add-coin .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.125rem;
+}
+
+.add-coin .header .nav-link {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.add-coin .header .nav-link a {
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--number-color);
+}
+
+.add-coin .header .nav-link span.slash {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.add-coin .header .nav-link span.navigate-submain {
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--number-color);
+}
+
+.add-coin .header button {
+    width: 147px;
+    height: 48px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 67px;
+    padding: .5rem 1rem;
+    font-family: IBM Plex Sans Arabic;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.add-coin .coin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+.add-coin .coin-form .input label,
+.add-coin .coin-form .exchange-prices .label {
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: .5rem 0;
+}
+
+.add-coin .coin-form .input .input-file {
+    width: 215px;
+    cursor: pointer;
+}
+
+.add-coin .coin-form .input .commission-rate-input {
+    display: flex;
+    align-items: center;
+}
+
+.add-coin .coin-form .input .commission-rate-input svg {
+    position: absolute;
+    left: 41px;
+    width: 24px;
+    height: 24px;
+}
+
+.add-coin .coin-form .input .hr {
+    margin: 0.625rem;
+}
+
+.add-coin .coin-form .input .hr div {
+    border: 1px solid #000;
+    opacity: 10%;
+}
+
+.coin-form .exchange-prices .labels {
+    display: flex;
+    gap: .5rem;
+}
+
+.coin-form .exchange-prices .labels .label.exchange-rate {
+    margin: .5rem;
+}
+
+.coin-form .exchange-prices .labels .label.sale,
+.coin-form .exchange-prices .labels .label.buy {
+    width: 43.38%;
+    text-align: center;
+}
+
+.coin-form .exchange-prices .inputs {
+    display: flex;
+    gap: .5rem;
+}
+
+.coin-form .exchange-prices .inputs .coin-info {
+    width: 112.9px;
+    display: flex;
+    align-items: center;
+    gap: .275rem;
+    border: 0.55px solid #E4E5E9;
+    border-radius: .55rem;
+    padding: 8.81px;
+    margin: 0 .5rem;
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+.coin-form .exchange-prices .inputs .coin-info img {
+    width: 35.23px;
+    border-radius: 4.4px;
+}
+
+.coin-form .exchange-prices .inputs input {
+    width: 43.38%;
+    text-align: center;
+}
