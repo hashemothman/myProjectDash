@@ -10,6 +10,7 @@ import { routes as OfficeRouters } from "./modules/offices/routes";
 import { routes as EmployeeRouters } from "./modules/employees/routes";
 import { routes as ServicesRouters } from "./modules/services/routes";
 import { routes as SettingsRouters } from "./modules/settings/routes";
+import { routes as UserActiveRouters } from "./modules/userActive/routes";
 import Auth from "./modules/auth/pages/AuthPage/Auth";
 
 export const routers = createBrowserRouter([
@@ -26,6 +27,7 @@ export const routers = createBrowserRouter([
       ...EmployeeRouters,
       ...ServicesRouters,
       ...SettingsRouters,
+      ...UserActiveRouters
     ],
   },
   {

@@ -30,6 +30,14 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li>
+                            <NavLink to='users-active'
+                                className={({ isActive }) => (isActive ? "active" : "")}
+                            >
+                                <FaUsers className='icon' />
+                                <span>طلبات التوثيق</span>
+                            </NavLink>
+                        </li>
+                        <li>
                             <NavLink to='agents'
                                 className={({ isActive }) => (isActive ? "active" : "")}
                             >

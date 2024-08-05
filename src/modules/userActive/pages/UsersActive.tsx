@@ -1,11 +1,11 @@
-import PalanceCard from "../components/PalanceCard/PalanceCard";
-import UserCard from "../components/UserCard/UserCard";
-import './Users.css'
+import PalanceCard from "../../users/components/PalanceCard/PalanceCard";
+import UserCard from "../../users/components/UserCard/UserCard";
+import './UsersActive.css'
 import syria from "../../../assets/flag/syria.png"
 import iraq from "../../../assets/flag/iraq.png"
 import usa from "../../../assets/flag/USA.png"
-import UserUnActive from "../components/UserUnActive/UserUnActive";
-const Users = () => {
+import UserUnActive from "../../users/components/UserUnActive/UserUnActive";
+const UsersActive = () => {
   return (
     <>
   <div className="ho-header-users">
@@ -15,11 +15,11 @@ const Users = () => {
     <PalanceCard name='دينار عراقي' image={iraq} palance={200.2}/>
   </div>
   <div className="ho-user-no-active">
-    <UserUnActive type="active"/>
+    <UserUnActive type="unactive"/>
   </div>
   </>
   
   )
 }
 
-export default Users;
+export default UsersActive;
