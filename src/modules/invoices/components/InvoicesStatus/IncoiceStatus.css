@@ -1,0 +1,46 @@
+.invoice-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.invoice-status .status-header {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.invoice-status .status-header .status-icon {
+    background-color: #EFF1F4;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    
+}
+
+.invoice-status .status-header .status-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.invoice-status .status-header .status-title .title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.invoice-status .status-header .status-title .date {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8a8a8a;
+    font-family: Poppins;
+}
+.invoice-status .status-value {
+    font-size: 1rem;
+    font-weight: 500;
+}

@@ -1,0 +1,29 @@
+.InvoiceStatistics {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.InvoiceStatistics .header {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.InvoiceStatistics .color{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+
+.InvoiceStatistics .statistics-percent {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+}

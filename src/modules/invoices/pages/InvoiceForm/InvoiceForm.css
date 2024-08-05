@@ -1,0 +1,100 @@
+.add-invoice .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.125rem;
+}
+
+.add-invoice .header .nav-link {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.add-invoice .header .nav-link a {
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--number-color);
+}
+
+.add-invoice .header .nav-link span.slash {
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.add-invoice .header .nav-link span.navigate-submain {
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--number-color);
+}
+
+.add-invoice .header button {
+    width: 147px;
+    height: 48px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 67px;
+    padding: .5rem 1rem;
+    font-family: IBM Plex Sans Arabic;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.add-invoice .invoice-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+.add-invoice .invoice-form .input label{
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 0 .5rem 0;
+}
+.add-invoice .invoice-form .input .invoice-value-input {
+    display: flex;
+    align-items: center;
+}
+.add-invoice .invoice-form .input .invoice-value-input svg {
+    position: absolute;
+    left: 41px;
+    width: 24px;
+    height: 24px;
+}
+.add-invoice .invoice-form .input .invoice-file-input {
+    display: flex;
+    align-items: center;
+}
+.add-invoice .invoice-form .input .invoice-file-input div {
+    background-color: #F4F8FB;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.625rem 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-align: right;
+    font-size: 0.9rem;
+}
+.add-invoice .invoice-form .input .invoice-file-input svg {
+    position: absolute;
+    left: 41px;
+    width: 24px;
+    height: 24px;
+}
+.add-invoice .invoice-form select {
+    background-color: #F4F8FB;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.625rem 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-align: right;
+    font-size: 0.9rem;
+}
