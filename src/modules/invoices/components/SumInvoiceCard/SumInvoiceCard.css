@@ -1,0 +1,35 @@
+.sumInvoiceCard{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+}
+.sumInvoiceCard .InvoiceCard-header-AY h3{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.sumInvoiceCard .InvoiceCard-header-AY h2{
+    color: #354359;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 43.71px;
+}
+
+.sumInvoiceCard .InvoiceCard-filter-AY {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #34435B;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+.sumInvoiceCard .InvoiceCard-filter-AY select{
+    padding: 7.5px 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
