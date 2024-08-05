@@ -1,8 +1,8 @@
 import './Coin.css'
 import CoinItem from "../components/CoinItem/CoinItem";
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { TCoin } from '../type';
+// import { useState } from 'react';
+// import axios from 'axios';
+// import { TCoin } from '../type';
 import { useNavigate } from 'react-router-dom';
 import PalanceCard from '../../users/components/PalanceCard/PalanceCard';
 import syria from "../../../assets/flag/syria.png"
@@ -10,17 +10,17 @@ import usa from "../../../assets/flag/USA.png"
 
 const Coins = () => {
 
-  const [coinsData, setCoinsData] = useState<TCoin[]>([]);
-  const [update, setUpdate] = useState(false);
+  // const [coinsData, setCoinsData] = useState<TCoin[]>([]);
+  // const [update, setUpdate] = useState(false);
 
   const navegate = useNavigate();
 
-  useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/admin/coins')
-      .then(res => setCoinsData(res.data.data))
-      .catch(err => console.log(err))
-      .finally(() => console.log(coinsData));
-  }, [update]);
+  // useEffect(() => {
+  //   axios.get('http://127.0.0.1:8000/api/admin/coins')
+  //     .then(res => setCoinsData(res.data.data))
+  //     .catch(err => console.log(err))
+  //     .finally(() => console.log(coinsData));
+  // }, [update]);
 
   const handelCreateAction = () => {
     navegate('/home/coins/add')
@@ -38,9 +38,10 @@ const Coins = () => {
             إضافة عملة
           </button>
         </div>
-        {coinsData.map((coin) => {
+        {/* {coinsData.map((coin) => {
           return <CoinItem key={coin.id} coin={coin} update={update} setUpdate={setUpdate} />
-        })}
+        })} */}
+        <CoinItem  coin_name="ليرة سورية" country_flag=''  />
       </div>
     </div>
   )
