@@ -9,6 +9,8 @@ import { routes as InvoiceRouters } from "./modules/invoices/routes";
 import { routes as OfficeRouters } from "./modules/offices/routes";
 import { routes as EmployeeRouters } from "./modules/employees/routes";
 import { routes as ServicesRouters } from "./modules/services/routes";
+import { routes as PermissionRouters } from "./modules/permissions/routes";
+import { routes as PercentsRouters } from "./modules/percents/routes";
 import { routes as SettingsRouters } from "./modules/settings/routes";
 import { routes as UserActiveRouters } from "./modules/userActive/routes";
 import Auth from "./modules/auth/pages/AuthPage/Auth";
@@ -27,7 +29,9 @@ export const routers = createBrowserRouter([
       ...EmployeeRouters,
       ...ServicesRouters,
       ...SettingsRouters,
-      ...UserActiveRouters
+      ...UserActiveRouters,
+      ...PermissionRouters,
+      ...PercentsRouters,
     ],
   },
   {
