@@ -93,6 +93,22 @@ const Sidebar = () => {
                                 <span>الإعدادات</span>
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink to='permissions'
+                                className={({ isActive }) => (isActive ? "active" : "")}
+                            >
+                                <FaCog className='icon' />
+                                <span>السماحيات</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='percents'
+                                className={({ isActive }) => (isActive ? "active" : "")}
+                            >
+                                <FaCog className='icon' />
+                                <span>النسب المئوية</span>
+                            </NavLink>
+                        </li>
                     </ul>
                     <ul className="logout">
                         <li>
