@@ -13,6 +13,8 @@ import { routes as PermissionRouters } from "./modules/permissions/routes";
 import { routes as PercentsRouters } from "./modules/percents/routes";
 import { routes as SettingsRouters } from "./modules/settings/routes";
 import { routes as UserActiveRouters } from "./modules/userActive/routes";
+import { routes as CountryRouters } from "./modules/countries/routes";
+import { routes as CityRouters } from "./modules/cities/routes";
 import Auth from "./modules/auth/pages/AuthPage/Auth";
 
 export const routers = createBrowserRouter([
@@ -30,6 +32,8 @@ export const routers = createBrowserRouter([
       ...ServicesRouters,
       ...SettingsRouters,
       ...UserActiveRouters,
+      ...CountryRouters,
+      ...CityRouters
       ...PermissionRouters,
       ...PercentsRouters,
     ],

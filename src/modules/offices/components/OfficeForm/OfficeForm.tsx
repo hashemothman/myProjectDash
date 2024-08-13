@@ -10,7 +10,7 @@ const OfficeForm = () => {
                     <img src={ArrowLeft} alt="" />
                     <Link to='/home/offices'>المكاتب</Link>
                     <span className='slash'>/</span>
-                    <span className='navigate-submain'>إضافة عملة</span>
+                    <span className='navigate-submain'>إضافة مكتب</span>
                 </div>
                 <button>
                     حفظ

@@ -1,0 +1,69 @@
+.YS-country-item{
+    height: 5.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    display: flex;
+}
+
+.YS-country-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.YS-country-item .YS-country-info {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.YS-country-item .YS-country-info .YS-country-icon {
+    background-color: #F4F8FB;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.YS-country-item .YS-country-info .YS-country-icon .icon {
+    width: 2.375rem;
+}
+
+.YS-country-item .YS-country-info .YS-country-details p{
+    margin-bottom: 0 !important;
+}
+
+.YS-country-item .YS-country-info .YS-country-details p.title {
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--number-color);
+}
+.YS-country-item .YS-country-info .YS-country-details p.state,
+.YS-country-item .YS-country-info .YS-country-details p.state span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.YS-country-item .YS-country-info .YS-country-details p.state span.green {
+    color: green;
+}
+.YS-country-item .YS-country-info .YS-country-details p.state span.red {
+    color: red;
+}
+
+.YS-country-item .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.535rem;
+}
+
+.YS-country-item .actions img {
+    width: 3rem;
+    cursor: pointer;
+}

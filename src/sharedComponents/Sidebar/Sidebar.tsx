@@ -1,7 +1,7 @@
 import Logo from './../../../public/logo.png'
 import './Sidebar.css'
 import { Link, NavLink } from 'react-router-dom'
-import { FaChartLine, FaUsers, FaUserTie, FaDollarSign, FaFileInvoiceDollar, FaBook, FaUserCog, FaHeadset, FaCog, FaSignOutAlt } from 'react-icons/fa';
+import { FaChartLine, FaUsers, FaUserTie, FaDollarSign, FaFileInvoiceDollar, FaBook, FaUserCog, FaHeadset, FaCog, FaSignOutAlt, FaGlobeAmericas, FaCity } from 'react-icons/fa';
 
 const Sidebar = () => {
     return (
@@ -67,6 +67,22 @@ const Sidebar = () => {
                             >
                                 <FaBook className='icon' />
                                 <span>المكاتب</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='countries'
+                                className={({ isActive }) => (isActive ? "active" : "")}
+                            >
+                                <FaGlobeAmericas className='icon' />
+                                <span>الدول</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='cities'
+                                className={({ isActive }) => (isActive ? "active" : "")}
+                            >
+                                <FaCity className='icon' />
+                                <span>المدن</span>
                             </NavLink>
                         </li>
                         <li>

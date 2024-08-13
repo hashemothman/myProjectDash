@@ -1,0 +1,67 @@
+.YS-city-item{
+    height: 5.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    display: flex;
+}
+
+.YS-city-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.YS-city-item .YS-city-info {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.YS-city-item .YS-city-info .YS-city-icon {
+    background-color: #F4F8FB;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.YS-city-item .YS-city-info .YS-city-icon .icon {
+    width: 2.375rem;
+}
+.YS-city-item .YS-city-info .YS-city-details p{
+    margin-bottom: 0 !important;
+}
+.YS-city-item .YS-city-info .YS-city-details p.title {
+    font-family: IBM Plex Sans Arabic;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--number-color);
+}
+.YS-city-item .YS-city-info .YS-city-details p.state,
+.YS-city-item .YS-city-info .YS-city-details p.state span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.YS-city-item .YS-city-info .YS-city-details p.state span.green {
+    color: green;
+}
+.YS-city-item .YS-city-info .YS-city-details p.state span.red {
+    color: red;
+}
+
+.YS-city-item .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.535rem;
+}
+
+.YS-city-item .actions img {
+    width: 3rem;
+    cursor: pointer;
+}
