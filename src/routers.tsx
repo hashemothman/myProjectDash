@@ -9,6 +9,8 @@ import { routes as InvoiceRouters } from "./modules/invoices/routes";
 import { routes as OfficeRouters } from "./modules/offices/routes";
 import { routes as EmployeeRouters } from "./modules/employees/routes";
 import { routes as ServicesRouters } from "./modules/services/routes";
+import { routes as PermissionRouters } from "./modules/permissions/routes";
+import { routes as PercentsRouters } from "./modules/percents/routes";
 import { routes as SettingsRouters } from "./modules/settings/routes";
 import { routes as UserActiveRouters } from "./modules/userActive/routes";
 import { routes as CountryRouters } from "./modules/countries/routes";
@@ -32,6 +34,8 @@ export const routers = createBrowserRouter([
       ...UserActiveRouters,
       ...CountryRouters,
       ...CityRouters
+      ...PermissionRouters,
+      ...PercentsRouters,
     ],
   },
   {
