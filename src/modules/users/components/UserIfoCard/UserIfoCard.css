@@ -1,0 +1,32 @@
+.ho-info-user-card{
+    width: 14rem;
+    border-radius: 1rem;
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 17rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.ho-info-user-card img{
+    border-radius: 1rem;
+}
+.ho-info-user-card-name,
+.ho-info-user-card-id{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.ho-info-user-card-complaint,
+.ho-info-user-card-off{
+    width: 100%;
+    padding: 0.3rem 0;
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    font-weight: bold;
+}

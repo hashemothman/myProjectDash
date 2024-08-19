@@ -5,6 +5,7 @@ import image from "../../../../assets/icons/person.png";
 import "./UserUnActive.css";
 import DeleteBtn from "./../../../../assets/actions/delete.png";
 import UpdateBtn from "./../../../../assets/actions/update.png";
+import { Link } from "react-router-dom";
 
 const UserUnActive = (props: { type: string }) => {
   return (
@@ -28,7 +29,9 @@ const UserUnActive = (props: { type: string }) => {
         </div>
         <div className="ho-no-active-action">
           <div>
+            <Link to='user-info'>
             <FaEye />
+            </Link>
           </div>
           {props.type == "active" ? (
             <div className="ho-icon-user-action">
