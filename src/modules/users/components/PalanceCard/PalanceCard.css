@@ -3,6 +3,9 @@
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem;
+
+}
+.ho-palance-user .ho-info-important{
     display: flex;
     justify-content: space-between;
 }
@@ -28,4 +31,26 @@
 .ho-footer-palance p{
 font-size: 0.8rem;
 font-weight: bold;
+}
+.ho-button-user-palance{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.ho-user-button-add,.ho-user-button-minus{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--border-color);
+    border-radius: 1rem;
+    justify-content: center;
+    width: 49%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ho-user-button-add p,.ho-user-button-minus p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    padding-left: 0.2rem;
+ 
 }

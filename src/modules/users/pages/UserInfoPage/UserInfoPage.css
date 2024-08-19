@@ -1,0 +1,48 @@
+.ho-user-info-page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.ho-info-user-cards-secund {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+
+}
+.ho-info-user-cards-secund-child {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.ho-info-user-cards-secund-clild1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem 0;
+    align-items: flex-end;
+}
+.ho-info-user-cards-secund-arrow{
+    display: flex;
+    width: 62%;
+    align-items: center;
+}
+.ho-info-user-cards-secund-arrow svg,
+.ho-info-user-cards-secund-arrow p:first-of-type {
+    cursor: pointer;
+}
+.ho-info-user-cards-secund-clild1 p{
+    margin: 0 0.3rem;
+    font-size: 0.875rem;
+}
+.ho-info-user-cards-secund-clild1 .ho-print-button{
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.ho-info-user-cards-secund-clild1 .ho-print-button span{
+    padding: 0 0.5rem;
+}
