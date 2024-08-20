@@ -6,6 +6,7 @@ import SumInvoiceCard from "../../components/SumInvoiceCard/SumInvoiceCard";
 import { GoArrowDown } from "react-icons/go";
 import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
+import "./Invoices.css";
 
 const Invoices = () => {
   const data = [
@@ -46,50 +47,72 @@ const navegate = useNavigate();
   }
   return (
     <div className="invoices">
-      <InvoiceChart/>
-      <SumInvoiceCard/>
-      {
-        data.map((data,index)=>{
-          return (
-            <InvoiceStatistics key={index} color={data.color} title={data.label} value={data.value}/>
-          );
-        })
-      }
-      {
-        data.map((data,index)=>{
-          return (
-            <IncoiceStatus key={index} icon={<GoArrowDown/>} value={data.value} title={data.label}  date={data.date}/>
-          );
-        })
-      }
+      <div className="container">
+        <div className="header">
+          <div className="cards">
+            <SumInvoiceCard/>
+            <div className="percent-cards">
+            {
+              data.map((data,index)=>{
+                return (
+                    <div className="col" style={{ marginTop:"5px" }}>
+                      <InvoiceStatistics key={index} color={data.color} title={data.label} value={data.value}/>
+                    </div>
+                );
+              })
+            }
+            </div>
+          </div>
+          <div className="chart">
+            <InvoiceChart/>
+          </div>
+        </div>
+        <div className="filter">
+          <div className="lists"> 
+            <select className="form-select" aria-label="Default select example">
+              <option>جميع المكاتب </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select className="form-select" aria-label="Default select example">
+              <option>جميع الفواتير </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <div className="filter-date">
+              <div className="date">
+                <label htmlFor="select" style={{ paddingTop: "1rem" }}>
+                  من تاريخ:
+                </label>
+                <Form.Control type="date" />
+              </div>
+              <div className="date" style={{ marginRight: "80px"}} >
+                <label htmlFor="select" style={{ paddingTop: "1rem" }}>
+                  إلى تاريخ:
+                </label>
+                <Form.Control type="date"/>
+              </div>
+            </div>
+          </div>
+          <div className="button" style={{ marginLeft:"4rem" }}>
+            <Button title={"اضافة فاتورة"} icon onclick={handleOnClick}/>
+          </div>
+        </div>
+        <div style={{ marginLeft:"4rem" }}>
+          {
+            data.map((data,index)=>{
+              return (
+                <IncoiceStatus key={index} icon={<GoArrowDown/>} value={data.value} title={data.label}  date={data.date}/>
+              );
+            })
+          }
+        </div>
+      
 
-      <select className="form-select" aria-label="Default select example">
-        <option>جميع المكاتب </option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <select className="form-select" aria-label="Default select example">
-        <option>جميع الفواتير </option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <div className="ho-popup-filter-date">
-        <div>
-          <label htmlFor="select" style={{ paddingTop: "1rem" }}>
-            من تاريخ:
-          </label>
-          <Form.Control type="date" />
-        </div>
-        <div>
-          <label htmlFor="select" style={{ paddingTop: "1rem" }}>
-            إلى تاريخ:
-          </label>
-          <Form.Control type="date" />
-        </div>
-        </div>
-      <Button title={"اضافة فاتورة"} icon onclick={handleOnClick}/>
+      </div>
+
 
     </div>
   )
