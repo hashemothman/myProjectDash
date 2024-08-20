@@ -1,0 +1,57 @@
+.invoices .container .header {
+    display: flex;
+}
+
+.invoices .container .header .cards {
+    flex: 0 0 auto;
+    width: 77%;
+    margin-top: 1rem;
+    height: 280px;
+}
+.invoices .container .header .chart{
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.invoices .container .header .cards .percent-cards{
+    grid-template-columns: 49% 50%;
+    grid-template-rows: 40px auto 80px;
+    column-gap: 10px;
+    row-gap: 15px;
+    display: grid;
+    margin-top: 20px;
+}
+
+.invoices .container .header .chart .invoice-chart canvas {
+    height: 250px !important;
+    width: 250px !important;
+}
+
+.invoices .container .filter{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.invoices .container .filter .lists {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.invoices .container .filter .lists .form-select{
+    padding: 13.5px 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.invoices .container .filter .lists .filter-date {
+    display: flex;
+}
+
+.invoices .container .filter .lists .filter-date .date{
+    display: block ruby;
+}
