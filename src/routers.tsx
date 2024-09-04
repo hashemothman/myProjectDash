@@ -33,7 +33,7 @@ export const routers = createBrowserRouter([
       ...SettingsRouters,
       ...UserActiveRouters,
       ...CountryRouters,
-      ...CityRouters
+      ...CityRouters,
       ...PermissionRouters,
       ...PercentsRouters,
     ],
