@@ -24,7 +24,8 @@
   font-size: 1rem;
 }
 .ho-user-info-item-no-acrive h2,
-.ho-user-info-item-no-acrive h3,.ho-no-active-button p {
+.ho-user-info-item-no-acrive h3,
+.ho-no-active-button p {
   font-size: 0.8rem;
 }
 /* .ho-user-info-item-no-acrive h3{
@@ -41,13 +42,12 @@
   gap: 0.5rem;
   align-items: center;
   padding: 1rem;
-  background-color: #FFFDD0;
-  color: #A87900;
+  background-color: #fffdd0;
+  color: #a87900;
   cursor: pointer;
   border-radius: 4px;
- 
 }
-.ho-no-active-action div:first-child a ,
+.ho-no-active-action div:first-child a,
 .ho-icon-user-action div {
   padding: 0.5rem;
   background-color: var(--border-color);
@@ -58,11 +58,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
+  color: black;
 }
 
-
-.ho-icon-user-action{
+.ho-icon-user-action {
   display: flex;
   flex-direction: row-reverse;
   gap: 1rem;
@@ -71,4 +70,3 @@
   width: 2.2rem;
   cursor: pointer;
 }
-

@@ -7,6 +7,9 @@ import { useNavigate } from 'react-router-dom';
 import PalanceCard from '../../users/components/PalanceCard/PalanceCard';
 import syria from "../../../assets/flag/syria.png"
 import usa from "../../../assets/flag/USA.png"
+import axios from 'axios';
+import Cookies from 'cookie-universal';
+
 
 const Coins = () => {
 
@@ -21,6 +24,21 @@ const Coins = () => {
   //     .catch(err => console.log(err))
   //     .finally(() => console.log(coinsData));
   // }, [update]);
+  const cookie = Cookies();
+  const token = cookie.get('BF-secret_key');
+
+  axios.get('https://app.basfast.com/api/admin/coins', {
+      headers: {
+          Authorization: 'Bearer ' + token ,
+          "Content-Type": "application/json" // تحديد نوع المحتوى بشكل صحيح
+        }
+  })
+  .then(response => {
+      console.log(response.data.data); // طباعة البيانات المستلمة
+  })
+  .catch(error => {
+      console.error('Error during request:', error); // طباعة الخطأ إذا حدث
+  });
 
   const handelCreateAction = () => {
     navegate('/home/coins/add')

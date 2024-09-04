@@ -6,6 +6,8 @@
     list-style: none;
     direction: rtl;
     font-family: 'IBM Plex Sans Arabic';
+    margin: 0;
+    padding: 0;
 }
 
 ul{

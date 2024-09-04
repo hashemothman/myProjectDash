@@ -35,6 +35,7 @@ const Users = () => {
       <div className="ho-user-no-active">
         <UserUnActive type="active" />
       </div>
+     
     </>
   );
 };

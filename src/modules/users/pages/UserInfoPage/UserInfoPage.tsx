@@ -7,6 +7,7 @@ import UserInfoCard from "../../components/UserIfoCard/UserInfoCard";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsPrinter } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import UserInfoBody from "../../components/UserInfoBody/UserInfoBody";
 
 
 const UserInfoPage = () => {
@@ -17,6 +18,7 @@ const UserInfoPage = () => {
       navigate(-1); 
     };
   return (
+    <>
     <div className="ho-user-info-page-header">
       <UserInfoCard/>
     <div className="ho-info-user-cards-secund">
@@ -57,6 +59,10 @@ const UserInfoPage = () => {
     
     </div>
     </div>
+    <div className="ho-user-info-body">
+        <UserInfoBody/>
+      </div>
+    </>
   );
 };
 
